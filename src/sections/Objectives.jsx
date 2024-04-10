@@ -27,7 +27,7 @@ function Objectives(){
             <div className="max-w-[1240px] w-full mx-auto px-6">
 
                 <div className="text-center">
-                    <p>Objectives</p>
+                    <h2 className="text-4xl font-semi-bold bg-gradient-to-bl from-[#2c815e] to-[#5ebb52] inline-block text-transparent bg-clip-text">Objectives</h2>
                     <h2 className="md:w-[60%] w-[80%] mx-auto font-bold md:text-3xl sm:text-2xl text-xl my-4">Driving Nigeria's Electric Mobility.</h2>
                 </div>
 

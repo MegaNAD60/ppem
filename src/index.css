@@ -15,14 +15,11 @@
             transparent
         );
 
-        @apply absolute h-[150%] w-[150%] left-[-25%] top-[-25%] content-[''] animate-rotateFrame;
+        /*@apply absolute h-[150%] w-[150%] left-[-25%] top-[-25%] content-[''] animate-rotateFrame;*/
     }
 
     .card-content{
-        @apply w-[100%] h-[100%] bg-gradient-to-b from-slate-800 to-slate-900
-    }
-    .card-content::before{
-        @apply absolute bg-gradient-to-b from-slate-800 to-slate-900
+        /*@apply w-[100%] h-[100%] bg-gradient-to-b from-slate-800 to-slate-900*/
     }
 
 }

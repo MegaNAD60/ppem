@@ -14,7 +14,7 @@ function Header() {
             </div>
         </div>
 
-        <div className="card-wrapper w-[90%] md:w-[50%] mx-auto p-4">
+        <div className="card-wrapper max-w-[1240px] w-[90%] md:w-[50%] mx-auto p-4">
 
           <div className='card-content flex items-center justify-center'>
             <div>

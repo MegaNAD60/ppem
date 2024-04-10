@@ -3,7 +3,7 @@ import Input from '../components/Input'
 
 function Contact() {
   return (
-    <div className='bg-[#3a8868] text-white'>
+    <div className='bg-gradient-to-bl from-[#2c815e] to-[#5ebb52] text-white'>
         <div className='max-w-[1240px] w-full mx-auto py-12 px-6 md:grid md:grid-cols-2'>
 
             <div className='md:w-[80%]'>
