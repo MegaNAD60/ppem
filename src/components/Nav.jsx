@@ -31,7 +31,7 @@ function Nav() {
                 <h1 className='w-full text-2xl font-bold'>PPEM</h1>
             </div>
 
-            <ul className="hidden md:flex w-full justify-between items-baseline">
+            <ul className="hidden lg:flex w-full justify-between items-baseline">
                 <li><Link to='#home' smooth>Home</Link></li>
                 <li><Link to='#about' smooth>About</Link></li>
                 <li><Link to='#objectives' smooth>Objectives</Link></li>
@@ -43,14 +43,14 @@ function Nav() {
                 </Link>
             </ul>
 
-            <div onClick={handleHamburger} className="block md:hidden px-6">
+            <div onClick={handleHamburger} className="block lg:hidden px-6">
                 {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
             </div>
 
             <div className={nav ? 'fixed w-[100%] left-0 top-0 bg-[#217451] z-10 ease-in-out duration-500 pb-3' : 'fixed top-[-100%]'}>
                 <div className='flex justify-between items-baseline'>
                   <h1 className='w-full text-2xl font-bold p-6'>PPEM</h1>
-                  <div onClick={handleHamburger} className="block md:hidden px-6">
+                  <div onClick={handleHamburger} className="block lg:hidden px-6">
                     {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
                   </div>
                 </div>
