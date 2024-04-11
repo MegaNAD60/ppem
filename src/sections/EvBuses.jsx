@@ -15,14 +15,14 @@ function EvBuses() {
         <div className='max-w-[1240px] w-full mx-auto px-6 py-20 md:grid md:grid-cols-2'>
           <div data-aos='fade-up-right' data-aos-duration='1000'>
             <h2 className='text-4xl font-semi-bold bg-gradient-to-bl from-[#2c815e] to-[#5ebb52] inline-block text-transparent bg-clip-text'>EV Buses</h2>
-            <p className='mt-4 leading-8'>
+            <p className='mt-4 leading-8 text-justify'>
             In a bold response to challenges triggered by subsidy removal, the Nigerian Government
             has embarked on an ambitious project to introduce a pilot fleet of 100 electric buses
             for mass transit. This strategic shift towards electric buses not only offers a cleaner
             and more efficient alternative but also positions Nigeria as a leader in electric vehicle
             (EV) adoption across the African continent..
             </p>
-            <p className='mt-4 leading-8'>
+            <p className='mt-4 leading-8 text-justify'>
             The impending deployment of these 100 e-buses will serve as a tangible demonstration,
             showcasing the practicality and benefits of this sustainable transportation solution.
             This pilot program sets the stage for a much larger scheme, with plans for expansive

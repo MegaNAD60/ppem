@@ -18,7 +18,8 @@ function About() {
         <div className='max-w-[1240px] mx-auto w-full my-10 px-6 py-20'>
             <h2 className='mx-auto text-4xl font-bold bg-gradient-to-bl from-[#2c815e] to-[#5ebb52] inline-block text-transparent bg-clip-text'>About Us</h2>
             <h1 data-aos='fade-up' data-aos-duration='1000' className='w-full mx-auto text-4xl font-semi-bold my-4'>Transforming Nigeria's Tansportation Landscape With Electric Mobility</h1>
-            <p data-aos='fade-up' data-aos-duration='1000' className='my-2'>The Presidential Program on Electric Mobility (PPEM) is a groundbreaking initiative
+            <p data-aos='fade-up' data-aos-duration='1000' className='my-2 text-justify'>
+                The Presidential Program on Electric Mobility (PPEM) is a groundbreaking initiative
                 aimed at revolutionizing Nigeria's transportation sector, envisioned by President
                 Bola Ahmed Tinubu and led by the Presidential Sustainable Mobility Initiative in
                 Nigeria. This visionary program aims to accelerate electric vehicle (EV) adoption,

@@ -18,7 +18,7 @@ function ChargingStations() {
           <h2 className='text-4xl font-semi-bold bg-gradient-to-bl from-[#2c815e] to-[#5ebb52] inline-block text-transparent bg-clip-text'>
             The Charging Infrastructure
           </h2>
-          <p className='mt-4 leading-10'>
+          <p className='mt-4 leading-10 text-justify'>
               PPEM is committed to expanding Nigeria's electric vehicle charging infrastructure.
                 Over the next three years, we plan to deploy 10,000 charging stations across the
                 country, ensuring convenient and reliable access to charging facilities for EV
