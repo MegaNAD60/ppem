@@ -4,8 +4,13 @@
 
 @layer utilities{
 
+
     .card-wrapper{
-        @apply relative top-[-20px] bg-gradient-to-b from-slate-700 to-slate-800 rounded-2xl
+        @apply relative top-2 md:top-[-150px] md:-left-40 bg-[#3a88d1] rounded-md
+    }
+
+    .card-wrapper-2{
+        @apply relative top-2 md:top-[-160px] md:left-40 mt-4 bg-[#3a88d1] rounded-md
     }
 
     .card-wrapper::before{

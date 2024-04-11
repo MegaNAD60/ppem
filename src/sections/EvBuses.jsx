@@ -11,8 +11,8 @@ function EvBuses() {
     }, [])
 
   return (
-    <div>
-        <div className='max-w-[1240px] w-full mx-auto px-6 py-16 md:grid md:grid-cols-2'>
+    <div id='ev-bus'>
+        <div className='max-w-[1240px] w-full mx-auto px-6 py-20 md:grid md:grid-cols-2'>
           <div data-aos='fade-up-right' data-aos-duration='1000'>
             <h2 className='text-4xl font-semi-bold bg-gradient-to-bl from-[#2c815e] to-[#5ebb52] inline-block text-transparent bg-clip-text'>EV Buses</h2>
             <p className='mt-4 leading-8'>
