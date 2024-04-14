@@ -26,7 +26,6 @@ function Objectives(){
                 </div>
 
                 <div data-aos='fade-up-right' data-aos-duration='1000' className="md:grid md:grid-cols-2 gap-5">
-                    <AnimatePresence>
                     {ObjectiveContents.map(contents => (
                         <motion.div className="bg-[#ffffff] text-black px-8 py-4 my-4 md:my-0 rounded-2xl grid grid-cols-5" layoutId={contents.id} onClick={() => setSelectedId(contents.id)}>
                              <motion.img src={contents.image} alt="" className="w-10 h-10 items-baseline md:mx-0" />
@@ -37,7 +36,6 @@ function Objectives(){
                         </motion.div>
                      )
                     )}
-                    </AnimatePresence>
 
                     <AnimatePresence>
                        {selectedID && (

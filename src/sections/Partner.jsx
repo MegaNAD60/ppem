@@ -22,7 +22,7 @@ function Partner() {
                 <h1 className='font-bold md:text-4xl'>Pathner With Us</h1>
                 <p className='md:text-2xl mt-2'>Let's collaborate! Are you interested in setting up a charging station at your premises?</p>
                 <Link to='#contact' smooth>
-                  <button className='bg-[#17583d] text-white font-medium mt-3 py-2 px-5 rounded-3xl'>Contact Us Now</button>
+                  <button className='bg-[#2dac57] text-white font-medium mt-3 py-2 px-5 rounded-3xl'>Contact Us Now</button>
                 </Link>
               </div>
 

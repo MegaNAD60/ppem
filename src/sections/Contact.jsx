@@ -6,7 +6,7 @@ function Contact() {
 
 
   return (
-    <div id='contact' className='bg-gradient-to-bl from-[#103626] to-[#1c3a18] text-white'>
+    <div id='contact' className='bg-gradient-to-bl from-[#2a8548] to-[#2dac57] text-white'>
         <div className='max-w-[1240px] w-full mx-auto py-20 px-6 md:grid md:grid-cols-2'>
 
             <div className='md:w-[80%]'>

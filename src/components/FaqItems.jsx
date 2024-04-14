@@ -55,7 +55,9 @@ function FaqItems(){
                         <span className="text-[#0f1731] font-light"><FaPlus /></span>
                     </div>
                 </div>
-                {expanded && <p>{answer}</p>}
+                <div className="ease-in-out duration-500">
+                    {expanded && <p className="ease-in-out duration-500">{answer}</p>}
+                </div>
             </div>
         )
     }

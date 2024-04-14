@@ -15,7 +15,7 @@ function Header() {
   return (
     <div id='home' className='text-[white] -mt-[100px]'>
 
-        <div className="bg-[rgba(46,44,44,0.7)] w-full h-screen relative" >
+        <div className="bg-[rgba(46,44,44,0.4)] w-full h-screen relative" >
             <img src={image} className='w-full h-full object-cover absolute mix-blend-overlay' />
             <motion.div
               variants={{

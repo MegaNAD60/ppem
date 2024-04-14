@@ -1,5 +1,8 @@
 import React from 'react'
 import image from '../images/Gemini_Generated_Image_aom68haom68haom6.jpeg'
+import environment from '../images/icons/environmental.png'
+import evs from '../images/icons/evs.png'
+import framework from '../images/icons/framework.png'
 
 import { useEffect, useState } from 'react'
 import AOS from 'aos';
@@ -21,7 +24,7 @@ function About() {
   return (
     <div id='about' className=''>
         <div className='max-w-[1240px] mx-auto w-full px-6 py-20'>
-            <h2 className='mx-auto text-4xl font-bold bg-gradient-to-bl from-[#48d1ba] to-[#22a08b] inline-block text-transparent bg-clip-text'>About Us</h2>
+            <h2 className='mx-auto text-4xl font-bold bg-gradient-to-bl from-[#2dac57] to-[#329653] inline-block text-transparent bg-clip-text'>About Us</h2>
             <h1 data-aos='fade-up' data-aos-duration='1000' className='w-full mx-auto text-4xl font-semi-bold my-4'>Transforming Nigeria's Tansportation Landscape With Electric Mobility</h1>
             <p data-aos='fade-up' data-aos-duration='1000' className='my-2 text-justify'>
                 The Presidential Program on Electric Mobility (PPEM) is a groundbreaking initiative
@@ -38,7 +41,7 @@ function About() {
             </p>
         </div>
 
-        <motion.div style={{scale}} className="bg-[rgba(46,44,44,0.8)] w-full h-96 relative my-6" >
+        <motion.div style={{scale}} className="bg-[rgba(46,44,44,0.4)] w-full h-96 relative my-6" >
             <img src={image} className='w-full h-full object-cover absolute mix-blend-overlay' />
             <motion.div
               variants={{
@@ -52,6 +55,11 @@ function About() {
               <h3 className='text-white font-medium text-3xl text-center md:text-3xl pt-[15%]'>
                 The Presidential Program on Electric Mobility (PPEM)
               </h3>
+              <div className='w-[50%] md:w-[30%] mt-4 mx-auto grid grid-cols-3'>
+                <img src={environment} className='w-10 h-10 md:w-20 md:h-20' />
+                <img src={evs} className='w-10 h-10 md:w-20 md:h-20' />
+                <img src={framework} className='w-10 h-10 md:w-20 md:h-20' />
+              </div>
             </motion.div>
         </motion.div>
 
