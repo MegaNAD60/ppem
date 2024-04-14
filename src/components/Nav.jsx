@@ -22,7 +22,7 @@ function Nav() {
 
     return (
 
-      <div className={fix ? "sticky top-0 left-0 z-10 bg-[#2b9669] text-white transition-[0.5s]" : "sticky top-0 left-0 bg-transparent text-white z-10"}>
+      <div className={fix ? "sticky top-0 left-0 z-10 bg-[#144933] text-white transition-[0.5s]" : "sticky top-0 left-0 bg-transparent text-white z-10"}>
         <div className='max-w-[1240px] w-full mx-auto px-6 py-4'>
 
           <nav className='flex justify-between'>
@@ -31,7 +31,7 @@ function Nav() {
                 <h1 className='w-full text-2xl font-bold'>PPEM</h1>
             </div>
 
-            <ul className="hidden lg:flex w-full justify-between items-baseline">
+            <ul className="hidden text-[1rem] lg:flex w-full justify-between items-baseline">
                 <li><Link to='#home' smooth>Home</Link></li>
                 <li><Link to='#about' smooth>About</Link></li>
                 <li><Link to='#objectives' smooth>Objectives</Link></li>
@@ -54,7 +54,7 @@ function Nav() {
                     {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
                   </div>
                 </div>
-                <ul className="w-full flex flex-col gap-10 pl-6">
+                <ul className="w-full flex flex-col gap-10 text-xl pl-6">
                   <li onClick={handleHamburger}><Link to='#home' smooth>Home</Link></li>
                   <li onClick={handleHamburger}><Link to='#about' smooth>About</Link></li>
                   <li onClick={handleHamburger}><Link to='#objectives' smooth>Objectives</Link></li>

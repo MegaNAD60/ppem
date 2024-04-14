@@ -21,7 +21,7 @@ function About() {
   return (
     <div id='about' className=''>
         <div className='max-w-[1240px] mx-auto w-full px-6 py-20'>
-            <h2 className='mx-auto text-4xl font-bold bg-gradient-to-bl from-[#43eead] to-[#179c86] inline-block text-transparent bg-clip-text'>About Us</h2>
+            <h2 className='mx-auto text-4xl font-bold bg-gradient-to-bl from-[#48d1ba] to-[#22a08b] inline-block text-transparent bg-clip-text'>About Us</h2>
             <h1 data-aos='fade-up' data-aos-duration='1000' className='w-full mx-auto text-4xl font-semi-bold my-4'>Transforming Nigeria's Tansportation Landscape With Electric Mobility</h1>
             <p data-aos='fade-up' data-aos-duration='1000' className='my-2 text-justify'>
                 The Presidential Program on Electric Mobility (PPEM) is a groundbreaking initiative
