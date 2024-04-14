@@ -13,6 +13,8 @@ import Footer from './sections/Footer';
 import ChargingStations from './sections/ChargingStations';
 import EvBuses from './sections/EvBuses';
 import Faq from './sections/Faq';
+import TailAnimate from './TailAnimate';
+import Partner from './sections/Partner';
 
 function App() {
 
@@ -44,6 +46,7 @@ function App() {
 
   return (
     <div className='overflow-x-clip'>
+
       <button className={showBtn ? "fixed animate-bounce right-4 bottom-4 lg:right-40 rounded-md font-medium p-3 z-10 bg-gradient-to-bl from-[#2c815e] to-[#5ebb52]" : 'hidden'}
       onClick={scrollTop}
       onScroll={whenScroll}><FaChevronUp className='text-white' /></button>
@@ -51,11 +54,14 @@ function App() {
       <Header />
       <About />
       <Objectives />
+      <Partner />
       <ChargingStations />
-      <EvBuses />
       <Faq />
       <Contact />
       <Footer />
+
+      {/*<TailAnimate />*/}
+
     </div>
   )
 }

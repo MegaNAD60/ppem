@@ -8,7 +8,7 @@ function Nav() {
   const [fix, setFix] = useState(false);
 
   function setFixed(){
-    if(window.scrollY > 300){
+    if(window.scrollY > 30){
       setFix(true)
     } else{
       setFix(false)
@@ -55,15 +55,15 @@ function Nav() {
                   </div>
                 </div>
                 <ul className="w-full flex flex-col gap-10 pl-6">
-                  <li><Link to='#home' smooth>Home</Link></li>
-                  <li><Link to='#about' smooth>About</Link></li>
-                  <li><Link to='#objectives' smooth>Objectives</Link></li>
-                  <li><Link to='#charging' smooth>Charging Stations</Link></li>
-                  <li><Link to='#ev-bus' smooth>E-buses</Link></li>
-                  <li><Link to='#faq' smooth>FAQ</Link></li>
-                  <Link to='#contact' smooth>
+                  <li onClick={handleHamburger}><Link to='#home' smooth>Home</Link></li>
+                  <li onClick={handleHamburger}><Link to='#about' smooth>About</Link></li>
+                  <li onClick={handleHamburger}><Link to='#objectives' smooth>Objectives</Link></li>
+                  <li onClick={handleHamburger}><Link to='#charging' smooth>Charging Stations</Link></li>
+                  <li onClick={handleHamburger}><Link to='#ev-bus' smooth>E-buses</Link></li>
+                  <li onClick={handleHamburger}><Link to='#faq' smooth>FAQ</Link></li>
+                  <li onClick={handleHamburger}><Link to='#contact' smooth>
                       <button className="bg-transparent border border-white rounded-3xl px-4 py-2 font-medium">Contact Us</button>
-                  </Link>
+                  </Link></li>
                 </ul>
             </div>
 

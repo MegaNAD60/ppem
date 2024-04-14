@@ -4,7 +4,6 @@
 
 @layer utilities{
 
-
     .card-wrapper{
         @apply relative top-2 md:top-[-150px] md:-left-40 bg-[#3a88d1] rounded-md
     }
@@ -23,8 +22,6 @@
         /*@apply absolute h-[150%] w-[150%] left-[-25%] top-[-25%] content-[''] animate-rotateFrame;*/
     }
 
-    .card-content{
-        /*@apply w-[100%] h-[100%] bg-gradient-to-b from-slate-800 to-slate-900*/
-    }
+
 
 }

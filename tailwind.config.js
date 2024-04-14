@@ -15,7 +15,7 @@ export default {
       },
 
       animation: {
-        rotateFrame: 'rotateFrame 4s linear infinite'
+        rotateFrame: 'rotateFrame 6s linear infinite'
       }
 
   },

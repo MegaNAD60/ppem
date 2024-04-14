@@ -1,12 +1,17 @@
 import React from 'react'
-import image from '../images/Gemini_Generated_Image_rnaj7arnaj7arnaj.jpeg'
+import image from '../images/Gemini_Generated_Image_aom68haom68haom6.jpeg'
 
 import { useEffect, useState } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { HashLink as Link } from 'react-router-hash-link';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 function About() {
+
+    const { scrollYProgress } = useScroll()
+    const scale = useTransform(scrollYProgress, [0, 1], [0.1, 4],)
+
 
     useEffect(() => {
     AOS.init();
@@ -15,8 +20,8 @@ function About() {
 
   return (
     <div id='about' className=''>
-        <div className='max-w-[1240px] mx-auto w-full my-10 px-6 py-20'>
-            <h2 className='mx-auto text-4xl font-bold bg-gradient-to-bl from-[#2c815e] to-[#5ebb52] inline-block text-transparent bg-clip-text'>About Us</h2>
+        <div className='max-w-[1240px] mx-auto w-full px-6 py-20'>
+            <h2 className='mx-auto text-4xl font-bold bg-gradient-to-bl from-[#43eead] to-[#179c86] inline-block text-transparent bg-clip-text'>About Us</h2>
             <h1 data-aos='fade-up' data-aos-duration='1000' className='w-full mx-auto text-4xl font-semi-bold my-4'>Transforming Nigeria's Tansportation Landscape With Electric Mobility</h1>
             <p data-aos='fade-up' data-aos-duration='1000' className='my-2 text-justify'>
                 The Presidential Program on Electric Mobility (PPEM) is a groundbreaking initiative
@@ -33,26 +38,27 @@ function About() {
             </p>
         </div>
 
-        <div className="bg-[rgba(46,44,44,0.8)] w-full h-96 relative my-6" >
+        <motion.div style={{scale}} className="bg-[rgba(46,44,44,0.8)] w-full h-96 relative my-6" >
             <img src={image} className='w-full h-full object-cover absolute mix-blend-overlay' />
+            <motion.div
+              variants={{
+                hidden: {opacity: 0, y: 75},
+                visible: {opacity: 1, y: 0},
+              }}
+              initial="hidden"
+              animate="visible"
+              transition={{duration: 0.5, delay: 0.25}}
+              className='max-w-[1240px] w-full md:w-[80%] mx-auto'>
+              <h3 className='text-white font-medium text-3xl text-center md:text-3xl pt-[15%]'>
+                The Presidential Program on Electric Mobility (PPEM)
+              </h3>
+            </motion.div>
+        </motion.div>
 
-            <div className='animation-wrapper'>
-
-              <div data-aos='zoom-in' data-aos-duration='1000' className='animation-content max-w-[1240px] w-[90%] md:w-[50%] text-center pt-20 md:pt-36 mx-auto text-white'>
-                <h1 className='font-bold md:text-4xl'>Pathner With Us</h1>
-                <p className='md:text-2xl mt-2'>Let's collaborate! Are you interested in setting up a charging station at your premises?</p>
-                <Link to='#contact' smooth>
-                  <button className='bg-[#17583d] text-white font-medium mt-3 py-2 px-5 rounded-3xl'>Contact Us Now</button>
-                </Link>
-              </div>
-
-            </div>
-
-
-        </div>
 
     </div>
   )
 }
 
 export default About
+
