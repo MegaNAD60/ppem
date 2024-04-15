@@ -1,8 +1,8 @@
 import React from 'react'
 import image from '../images/Gemini_Generated_Image_aom68haom68haom6.jpeg'
-import environment from '../images/icons/environmental.png'
-import evs from '../images/icons/evs.png'
-import framework from '../images/icons/framework.png'
+import environment from '../images/icons/eco.png'
+import evs from '../images/icons/evs-g.png'
+import framework from '../images/icons/fw.png'
 
 import { useEffect, useState } from 'react'
 import AOS from 'aos';
@@ -52,13 +52,21 @@ function About() {
               animate="visible"
               transition={{duration: 0.5, delay: 0.25}}
               className='max-w-[1240px] w-full md:w-[80%] mx-auto'>
-              <h3 className='text-white font-medium text-3xl text-center md:text-3xl pt-[15%]'>
-                The Presidential Program on Electric Mobility (PPEM)
+              <h3 className='text-white font-medium text-3xl text-center md:text-3xl pt-[30%] md:pt-[15%]'>
+                Build An Eco-Friendly Environment
               </h3>
-              <div className='w-[50%] md:w-[30%] mt-4 mx-auto grid grid-cols-3'>
-                <img src={environment} className='w-10 h-10 md:w-20 md:h-20' />
+              <div className='w-[50%] md:w-[30%] mt-[60px] md:mt-[80px] mx-auto grid grid-cols-3 gap-4'>
+
+              <div className=''>
                 <img src={evs} className='w-10 h-10 md:w-20 md:h-20' />
+              </div>
+              <div className=''>
+                <img src={environment} className='w-10 h-10 md:w-20 md:h-20' />
+              </div>
+              <div className=''>
                 <img src={framework} className='w-10 h-10 md:w-20 md:h-20' />
+              </div>
+
               </div>
             </motion.div>
         </motion.div>
