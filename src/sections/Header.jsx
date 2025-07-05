@@ -29,6 +29,7 @@ function Header() {
               <h1 className='text-white font-bold text-3xl text-center md:text-left md:text-5xl pt-60'>
                 The Presidential Program on Electric Mobility (PPEM)
               </h1>
+              <h2>We bring you news about our daily progress.</h2>
             </motion.div>
         </div>
 
